@@ -1,0 +1,5 @@
+Problema: para los usuarios del transporte de buses de la Universidad EIA, muchas veces el uso del servicio es inexacto y poco confiable. Los horarios de recogida de los buses varían en gran cantidad dependiendo de factores externos, como el día, la hora, el clima, el tráfico, entre otros. Esto genera largos tiempos de espera en las paradas del bus, y la duda de si el bus ya pasó o está por pasar.
+
+Solución: proponemos el uso de los dispositivos móviles y su GPS (Global Positioning System) en los buses privados de la universidad, que estén vinculados a una página web donde se puede ver la ubicación en tiempo real de cada uno de los vehículos. Con esta información, los usuarios podrán ver si el bus está atrasado, ya pasó y tomar decisiones acorde para llegar a tiempo a sus clases.
+
+Implementación:El desarrollo de todo el algoritmo de él proyecto estará en el lenguaje de java por su facilidad en el backend y la lógica. La idea es que todo el proyecto sea implementado en la página de transporte de EIA digital por lo cual un conocimiento mínimo necesario extra en HTML para la inclusión del algoritmo y visualización de la página.
