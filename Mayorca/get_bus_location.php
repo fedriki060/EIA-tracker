@@ -1,9 +1,6 @@
 <?php
 // Conexión a la base de datos
-$servername = "sql100.infinityfree.com";
-$username = "if0_37337860";
-$password = "UniEIA060";
-$dbname = "if0_37337860_mayorca";
+//Oculto
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

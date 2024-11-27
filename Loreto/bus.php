@@ -7,10 +7,7 @@ if (!isset($_SESSION['verified']) || $_SESSION['verified'] !== true) {
 }
 
 // db_connection.php
-$servername = "sql100.infinityfree.com";
-$username = "if0_37337860";
-$password = "UniEIA060";
-$dbname = "if0_37337860_sanantonio";
+//Oculto
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

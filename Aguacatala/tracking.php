@@ -10,10 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 $username = $_SESSION['username'] ?? 'Usuario'; // Reemplaza 'Usuario' si no hay nombre en la sesión
 
 // Conexión a la base de datos
-$servername = "sql100.infinityfree.com"; // Cambia esto si tu servidor no es local
-$db_username = "if0_37337860"; // Reemplaza con tu nombre de usuario de la base de datos
-$db_password = "UniEIA060"; // Reemplaza con tu contraseña de la base de datos
-$dbname = "if0_37337860_db"; // Reemplaza con el nombre de tu base de datos
+//Oculto
 
 $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 

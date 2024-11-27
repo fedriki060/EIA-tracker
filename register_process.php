@@ -1,9 +1,6 @@
 <?php
 // Conectar a la base de datos
-$servername = "sql100.infinityfree.com";  // Servidor (en XAMPP es localhost)
-$username = "if0_37337860";  // Usuario (en XAMPP, el usuario predeterminado es root)
-$password = "UniEIA060";  // Contraseña (en XAMPP, normalmente está vacía)
-$dbname = "if0_37337860_db";  // Nombre de la base de datos que creaste
+//oculto
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

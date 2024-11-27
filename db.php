@@ -2,10 +2,7 @@
 // db.php
 
 // Configuración de la base de datos
-$servername = "sql100.infinityfree.com";
-$username = "if0_37337860";
-$password = "UniEIA060";
-$db_name = "if0_37337860_db";
+//oculto
 
 
 
