@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .content {
+            text-align: center;
+            margin-top: 60px; /* Ajusta el margen para evitar que el contenido esté pegado al botón */
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            z-index: 3;
+
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            font-size: 20px; /* Ajusta el tamaño de la fuente aquí */
+            text-align: center; /* Opcional: Alinea el texto dentro del pre a la izquierda */
+            white-space: pre-wrap; /* Opcional: Envuelve el texto dentro de pre para evitar desbordamiento horizontal */
+            margin: 0 auto; /* Opcional: Centra el contenido del pre si es necesario */
+            width: 50%; /* Opcional: Ajusta el ancho del contenedor del pre */
+            color: white;
+        }
+        .video-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: white;
+        }
+        .black-hue {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="busvideo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+            <div class="black-hue"></div>
+
+    <button class="back-button" onclick="window.location.href='index.html'">Volver al Menú</button>
+    <div class="content">
+        <h1 style="color:lightblue">Solución</h1>
+        <PRE>Proponemos la instalación de dispositivos GPS (Global Positioning System) en los buses privados de la universidad, que estén vinculados a una página web donde se puede ver la ubicación en tiempo real de cada uno de los vehículos. 
+        Con esta información, los usuarios podrán ver si el bus está atrasado, ya pasó y tomar decisiones acorde para llegar a tiempo a sus clases.
+        </PRE>
+    </div>
+</body>
+</html>

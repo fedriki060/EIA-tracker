@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #00bcd4;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #00bcd4;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .terms-container {
+            background-color: #1F1F1F;
+            border-radius: 12px;
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .accordion {
+            background-color: #333;
+            color: #E0E0E0;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: left;
+            border: none;
+            width: 100%;
+            margin: 5px 0;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion:hover {
+            background-color: #0097a7;
+        }
+
+        .panel {
+            padding: 0 20px;
+            display: none;
+            background-color: #2a2a2a;
+            color: #E0E0E0;
+            font-size: 1.1em;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .panel p {
+            margin: 10px 0;
+        }
+
+        .button {
+            background-color: #00bcd4;
+            color: #fff;
+            font-size: 1.1em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .button:hover {
+            background-color: #0097a7;
+        }
+        h1, h2 {
+            transition: transform 0.5s ease;
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.05);
+            color: #16b5ff;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #16b5ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AVISO DE PRIVACIDAD DE SERVICIO DE UBICACIÓN DE EIA TRACKER</h1>
+
+    <div class="terms-container">
+        <button class="accordion">1. Introducción</button>
+        <div class="panel">
+            <p>
+                EIA Tracker es responsable del tratamiento de la información personal proporcionada por los usuarios que utilicen este servicio de ubicación de buses de la EIA. Este servicio permite a los usuarios conocer en tiempo real la ubicación de los buses universitarios, utilizando datos de ubicación y los datos de inicio de sesión proporcionados por los usuarios. Al acceder o utilizar el Servicio, los usuarios (en adelante, el "Usuario") aceptan las condiciones de este Aviso de Privacidad.
+            </p>
+        </div>
+
+        <button class="accordion">2. Recopilación de Información Personal</button>
+        <div class="panel">
+            <p><strong>2.1 Información que recopilamos:</strong><br>
+                - Correo electrónico: El Usuario proporcionará su correo electrónico y una clave para acceder a ciertas funcionalidades del servicio, como el acceso a la cuenta personal del usuario.<br>
+                - Datos de ubicación: El Servicio recopilará la ubicación del dispositivo electrónico del Usuario para optimizar la experiencia y permitir la visualización de la cercanía de los buses. La ubicación será obtenida mediante GPS, IP y otros sensores del dispositivo.</p>
+            <p><strong>2.2 Finalidad del tratamiento:</strong><br>
+                EIA utilizará la información recopilada para permitir la correcta operación del Servicio, mejorando la experiencia del Usuario al ofrecer información precisa sobre la ubicación de los buses en tiempo real.</p>
+        </div>
+
+        <button class="accordion">3. Almacenamiento de Información Personal</button>
+        <div class="panel">
+            <p><strong>3.1 Duración del almacenamiento:</strong><br>
+                La información de ubicación y el correo electrónico proporcionados por el Usuario serán almacenados mientras el Usuario utilice el servicio, para poder brindar el servicio de ubicación en tiempo real.</p>
+            <p><strong>3.2 Seguridad:</strong><br>
+                EIA implementará medidas de seguridad para proteger los datos personales y evitar accesos no autorizados.</p>
+        </div>
+        <button id="accept-button" class="button" onclick="window.location.href='registro.html'" disabled>Aceptar Términos</button>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var allPanels = document.getElementsByClassName("panel");
+        var acceptButton = document.getElementById("accept-button");
+        var openedPanels = 0;
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    openedPanels--;
+                } else {
+                    panel.style.display = "block";
+                    openedPanels++;
+                }
+                if (openedPanels === allPanels.length) {
+                    acceptButton.disabled = false;
+                    acceptButton.style.opacity = 1;
+                    acceptButton.style.pointerEvents = "auto";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
